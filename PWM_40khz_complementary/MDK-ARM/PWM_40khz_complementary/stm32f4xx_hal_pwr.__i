@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include --C99
+-I.\RTE\_PWM_40khz_complementary
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F446xx -DUSE_HAL_DRIVER -DSTM32F446xx --C99
+-o pwm_40khz_complementary\stm32f4xx_hal_pwr.o --omf_browse pwm_40khz_complementary\stm32f4xx_hal_pwr.crf --depend pwm_40khz_complementary\stm32f4xx_hal_pwr.d "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
