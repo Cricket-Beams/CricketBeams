@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"speaker_driver\system_stm32f4xx.o"
+"speaker_driver\startup_stm32f446xx.o"
+"speaker_driver\stm32f4xx_hal_gpio.o"
+"speaker_driver\stm32f4xx_hal_dma.o"
+"speaker_driver\stm32f4xx_hal_tim_ex.o"
+"speaker_driver\stm32f4xx_hal_cortex.o"
+"speaker_driver\stm32f4xx_hal_flash.o"
+"speaker_driver\stm32f4xx_hal_rcc_ex.o"
+"speaker_driver\stm32f4xx_hal_pwr_ex.o"
+"speaker_driver\stm32f4xx_hal_pwr.o"
+"speaker_driver\stm32f4xx_hal_rcc.o"
+"speaker_driver\stm32f4xx_hal_dma_ex.o"
+"speaker_driver\stm32f4xx_hal_flash_ex.o"
+"speaker_driver\stm32f4xx_hal_flash_ramfunc.o"
+"speaker_driver\stm32f4xx_hal.o"
+"speaker_driver\stm32f4xx_hal_tim.o"
+"speaker_driver\stm32f4xx_it.o"
+"speaker_driver\main.o"
+"speaker_driver\stm32f4xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Speaker_Driver\Speaker_Driver.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Speaker_Driver.map" -o Speaker_Driver\Speaker_Driver.axf
