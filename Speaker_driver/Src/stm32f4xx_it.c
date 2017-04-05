@@ -28,7 +28,7 @@
   * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
-  ***************************** *************************************************
+  ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
@@ -39,11 +39,11 @@
 static uint32_t burst_Counter = 0;
 static uint16_t burst_pwmStep = 0;
 static uint8_t pwm_dutySinLUT[10] = {60,80,100,80,60,40,20,0,20,40};
+extern TIM_HandleTypeDef htim1;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim2;
-extern TIM_HandleTypeDef htim1;
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Interruption and Exception Handlers         */ 
